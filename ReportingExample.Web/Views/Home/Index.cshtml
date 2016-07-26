@@ -1,0 +1,37 @@
+﻿@model IEnumerable<ReportingExample.Web.Models.CustomerViewModel>
+
+<div class="jumbotron">
+    <h1>Customer Report</h1>
+</div>
+
+<div class="row" style="margin-bottom: 15px;">
+    <div class="col-md-12">
+        <div class="pull-right">
+
+            @Html.ActionLink("Export to PDF", "Export", new {reportType = "PDF"}, new {@class = "btn btn-primary"})
+            @Html.ActionLink("Export to Word", "Export", new {reportType = "Word"}, new {@class = "btn btn-primary"})
+            @Html.ActionLink("Export to Excel", "Export", new {reportType = "Excel"}, new {@class = "btn btn-primary"})
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-striped">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.FirstName)</th>
+                <th>@Html.DisplayNameFor(model => model.LastName)</th>
+                <th>@Html.DisplayNameFor(model => model.EmailAddress)</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.FirstName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.LastName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.EmailAddress)</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
