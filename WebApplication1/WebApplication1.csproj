@@ -262,12 +262,6 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyData\MyData.csproj">
-      <Project>{54282922-1c51-4a2c-8f7e-361c612b474b}</Project>
-      <Name>MyData</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Reports\Report1.rdlc" />
   </ItemGroup>
   <PropertyGroup>

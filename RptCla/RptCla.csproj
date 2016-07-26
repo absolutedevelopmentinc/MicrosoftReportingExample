@@ -45,12 +45,6 @@
     <Compile Include="ReportDataModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyData\MyData.csproj">
-      <Project>{54282922-1c51-4a2c-8f7e-361c612b474b}</Project>
-      <Name>MyData</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Report1.rdlc" />
   </ItemGroup>
   <ItemGroup>
